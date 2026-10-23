@@ -50,4 +50,7 @@ if ($currentBranch -ne "main") {
 }
 
 git push -u origin main
+if ($LASTEXITCODE -ne 0) {
+    throw "Push ke GitHub gagal. Periksa login Git, akses repository, dan pesan error GitHub di atas."
+}
 Write-Host "Website berhasil diperbarui ke GitHub."

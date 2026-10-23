@@ -1,1 +1,19 @@
+# Local Python environment
 .venv/
+venv/
+__pycache__/
+*.pyc
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
